@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center ;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+
+            /*ย้ายตำแหน่งกล่อง*/
+            /*transform: translate(200px,100px);/*ใช้เพื่อย้ายตำแหนง่วัตถุตามพิกัดแกน x,y*/
+            /*transform: rotate(45deg);/*การหมุนวัตถุโดยสามารถกำหนดพิกัดแกนในการหมุนได้ เช่น rotatex() ก็จะหมุนรอบแกน x ในแนวสามมิติจะดูเหมือนกล่องโดนบีบเล็กลง*/
+            transform: scale(2,3);/*การขยายเป็นจำนวนเท่าจากของเดิมตามแนวแกน x,y xคือตามแนวกว้าง*/
+            /*transform: skew(45deg,15deg);/*การกำหนดความเอียงตามแนวแกน x,y เช่นเดียวกับ scale*/
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
