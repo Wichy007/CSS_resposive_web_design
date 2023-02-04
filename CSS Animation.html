@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*CSS Animation1
+        body{
+            background-color: #333;
+        }
+        .box{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            animation-name: animate1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        /*พื้นที่การกำหนดอนิเมชั่น โดยต้องบแกว่าจะให้ไปทำกับวัตถุอะไร(บอกชื่อ)*/
+        /*@keyframes animate1{
+            from{
+                width: 100px;
+            }
+            to{
+                width: 400px;
+            }
+        }*/
+        body{
+            background-color: #333;
+        }
+        .box{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-timing-function: ease-in-out;
+            /*animation-name: animate2;
+            animation-duration: 5s;
+            animation-iteration-count: 2;*/
+            animation: animate2 5s infinite;/*รูปแบบการเขียน shorthand*/
+        }
+        /*จากการเขียน form to สามารถกำหนดเป็นเปอร์เซนต์ได้เช่นกันโดยคิดเป็นเปอร์เซนต์จากระยะเวลาในการทำงาน (Animatio-duration)*/
+        @keyframes animate2{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: 300px;
+            }
+            50%{
+                top: 300px;
+                left: 300px;
+            }
+            75%{
+                top: 300px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

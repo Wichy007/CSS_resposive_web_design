@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .box{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            /*transition-property: background;
+            transition-duration: 0.5s;/*ระยะเวลาที่ใช้ในการทำงาน*/
+            /*transition-timing-function: ease-in-out;/*รูปแบบการทำงานของฟังก์ชันเป็นกราฟความเร็วในการทำงาน*/
+            /*transition-delay: 0.5s;/*รอกว่าฟังก์ชันจะทำงาน*/
+            transition: /*background 3s , width 3s , border-radious 3s*/ all 3s ease-in 0.5s ;/*เขียนย่อ property duration timmingfunction delay 
+            หรือสามารถใช้ฟังกฺชัน all ได้ถ้าหากใช้เวลาเท่ากัน*/
+        }
+        .box:hover{
+            background-color: red;
+            width: 300px;
+            border-radius: 50px;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
